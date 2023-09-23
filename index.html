@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>program</title>
+        <style>
+            body{
+                font-family: calibri,helvetica, sans-serif;
+                background-color: rgb(16, 11, 12);
+            }
+            .container{
+                padding: 85px;
+                background-color: lightblue;
+            }
+            input[type=text],input[type=password],input[type=email],input[type=number],input[type=date],textarea{
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                border-radius: 10px;
+                background: #f1f1f1;
+
+            }
+            input[type=text]:focus,input[type=password]:focus,input[type=email]:focus,input[type=number]:focus,input[type=date]:focus{
+                background-color: rgb(174, 244, 191);
+                outline: none;
+            }
+           .course {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22 0;
+                display: inline-block;
+                border-radius: 10px;
+                border: none;
+                background:#f1f1f1;
+
+            }
+            div{
+                padding: 10px 0;
+            }
+            hr{
+                border: 1px solid #1a0b0b;
+                margin-bottom: 45px;
+            }
+            .registerbtn{
+                background-color: 4caf50;
+                color: #f1f1f1;
+                padding: 16px 20px;
+                margin: 15px 0;
+                border: none;
+                cursor: pointer;  
+                width: 100%; 
+                opacity: 0.9;
+                border-radius: 10px;
+                           }
+                
+               .registerbtno{
+                background-color: red;
+                color: #f1f1f1;
+                padding: 16px 20px;
+                margin: 15px 0;
+                border: none;
+                cursor: pointer;  
+                width: 100%; 
+                opacity: 0.9;
+                border-radius: 10px;
+
+               }            
+               .registerbtn:hover{
+                opacity: 1;
+               }
+               .registerbtno:hover{
+                opacity: 1;
+               }
+               h1{
+                color: rgb(0, 26, 255);
+               }
+                           
+        </style>
+    </head>
+    <body>
+        <form>
+            <div class="container">
+                <center><h1><b>Student Registeration Form</b></h1></center>
+            <hr>
+            <label>FirstName </label>
+            <input type="text" Name="Firstname" placeholder="Enter Tha First Name" required>
+           
+            <label>Lastname </label>
+            <input type="text" Name="lastname" placeholder="Enter Tha last Name" required>
+
+            <label>Date Birth</label>
+            <input type="date" name="date" >
+           
+            <label>User ID </label>
+            <input type="text" Name="user id" placeholder="Enter Tha User ID" required>
+
+            <label>Password </label>
+            <input type="password" Name="password" placeholder="Enter Tha Password" required>
+            
+            <label>Re-type Password</label>
+            <input type="Password" Name="password" placeholder="Re-type Password" required>
+            
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter tha Email ID" required>
+
+            <label>Mobile Number</label>
+            <input type="Number" name="number" placeholder="Enter tha Mobile Number" size="10"/required>
+             
+            <label>Course</label>
+            <select class="course" required>
+                <option value="Course">------------Select-----------</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="MBA">MBA</option>
+                <option value="MCA">MCA</option>
+                <option value="M.Tech">M.Tech</option>
+                     
+            </select>
+            <button type="submit" class="registerbtn">Register</button>
+            <button type="Reset" class="registerbtno"> Reset</button>
+        </div>
+        </form>
+    </body>
+</html>
